@@ -1,4 +1,5 @@
 <template>
+  <BaiduMap />
   <nut-searchbar v-model="query_content">
     <template #rightin>
       <Voice />
@@ -167,7 +168,8 @@ import {
 } from "@nutui/icons-vue";
 import { useRouter } from "vue-router";
 import axios from "axios";
-const pageSize=ref(2);
+import BaiduMap from '../BaiduMap.vue'
+const pageSize=ref(5);
 const pageNum=ref(0);
 const sortBy=ref(0);
 const sortOrder=ref(0);
