@@ -2,7 +2,9 @@ const { defineConfig } = require('@vue/cli-service')
 const Components = require('unplugin-vue-components/webpack')
 const NutUIResolver = require('@nutui/auto-import-resolver')
 
-const BaseUrl = "https://hz-t3.matpool.com:27352"
+const BaseUrl = "http://172.27.67.74:5000"
+const imageURL = "https://food-bank.obs.cn-east-3.myhuaweicloud.com/"
+
 module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {

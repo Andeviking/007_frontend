@@ -1,5 +1,10 @@
 <template>
-  <router-view />
+  <router-view v-slot="{ Component,route }">
+    <keep-alive >
+      <component v-if="route.meta.keepAlive" :is="Component" />
+    </keep-alive>
+    <component v-if="!route.meta.keepAlive" :is="Component" />
+  </router-view> 
   <nut-config-provider :theme-vars="themeVars">
     <nut-tabbar class="tabbar" v-model="active" @tab-switch="tabSwitch" bottom safe-area-inset-bottom placeholder>
       <nut-tabbar-item

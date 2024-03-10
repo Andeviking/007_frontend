@@ -8,7 +8,10 @@ const router = createRouter({
         {
             path: '/searchCommodity',
             name: 'searchCommodity',
-            component: SearchCommodityPage
+            component: SearchCommodityPage,
+            meta: {
+                keepAlive: true //需要被缓存
+            }
         },
         {
             path: '/commodityDetail',
