@@ -169,7 +169,7 @@ import {
 import { useRouter } from "vue-router";
 import axios from "axios";
 import BaiduMap from '../BaiduMap.vue'
-const pageSize=ref(5);
+const pageSize=ref(6);
 const pageNum=ref(0);
 const sortBy=ref(0);
 const sortOrder=ref(0);
