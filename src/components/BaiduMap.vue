@@ -15,7 +15,7 @@
 <script setup>
  /* eslint-disable */ 
 import { onMounted ,ref} from 'vue';
-import BaiduMap from './BaiduMap'
+import BaiduMap from 'BaiduMap'
 /*
     地区切换模块
 */
